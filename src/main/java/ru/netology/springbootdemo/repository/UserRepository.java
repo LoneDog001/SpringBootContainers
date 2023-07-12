@@ -19,9 +19,9 @@ public class UserRepository {
         this.authorities.put("User", List.of(Authorities.READ));
     }
 
-    public List<Authorities> getUserAuthorities(String user, String password) {
-        if (!user.isEmpty() && !password.isEmpty()){
-            return authorities.getOrDefault(user, Collections.emptyList());
+    public List<Authorities> getUserAuthorities(String userName, String userPassword) {
+        if (!userName.isEmpty() && !userPassword.isEmpty()){
+            return authorities.getOrDefault(userName, Collections.emptyList());
         }
         return Collections.emptyList();
     }
