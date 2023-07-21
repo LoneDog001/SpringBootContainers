@@ -1,0 +1,7 @@
+version: '8.3'
+
+services:
+  app:
+    build: ./
+    ports:
+    - "8885:8080"
